@@ -1,0 +1,13 @@
+extends ./layout/layout
+include components/search
+include components/restaurants
+
+block variables
+    - var page_title = 'Магазины';
+
+block content 
+    div.content__identation-margin-top_56px
+        +search()
+    div.content__identation-margin-bottom_64px                
+        +restaurants()                
+            

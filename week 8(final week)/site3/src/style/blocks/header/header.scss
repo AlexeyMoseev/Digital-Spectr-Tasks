@@ -1,0 +1,48 @@
+.header {
+  height: 72px;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, .16);
+  &__logo {
+    padding: 30px 0 30px 0;
+    &:hover {
+      svg {
+        fill-opacity: 60%;
+      }
+    }
+  }
+  &__sign-in-and-basket {
+    display: flex;
+    align-items: center;
+  }
+  &__sign-in {
+    margin-right: 31.51px;
+    height: 40px;
+    width: 78px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+      opacity: $primary-opacity;
+    }
+  }
+  &__basket {
+    cursor: pointer;
+    &:hover {
+      opacity: $primary-opacity;
+    }
+  }
+  @include phone {
+    &__basket {
+      display: none;
+    }
+    &__sign-in-and-basket {
+      justify-content: flex-end;
+    }
+    &__logo {
+      padding-left: 15px;
+    }
+  }
+}

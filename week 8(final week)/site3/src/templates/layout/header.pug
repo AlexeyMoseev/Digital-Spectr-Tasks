@@ -1,0 +1,17 @@
+mixin header()
+    header.header
+    .swiper
+        .swiper-container
+              
+            .swiper-wrapper
+                
+                .swiper-slide
+                    .container
+                        .row.align-items-center
+                            a.header__logo.col-xl-2.col-lg-2.col-md-2.col-sm-5.col-5(href="#")
+                                include ../../images/logo.svg
+                            div.header__phantom-block.col-xl-8.col-lg-8.col-md-8.col-sm-3.col-3  
+                            div.header__sign-in-and-basket.col-xl-2.col-lg-2.col-md-2.col-sm-4.col-4    
+                                button.header__sign-in Войти
+                                img.header__basket(src="../images/basket.svg")
+        img.swiper-button-next   

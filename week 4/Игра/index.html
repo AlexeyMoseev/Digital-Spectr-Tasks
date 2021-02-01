@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Задание 1</title>
+</head>
+
+<body class="body">
+    <div class="content">
+        <div class="input-form">
+            <h1>Игра:<span>до(у)гнать за 60 секунд</span></h1>
+            <h2>Задайте параметры</h2></br>
+            <form class="form">
+                <label for="fname">Размеры квадрата игрока 1:</label>
+                </br>
+                <input class="fname" type="number" id="fname" name="fname">
+                <label for="sname">Размеры квадрата игрока 2:</label>
+                </br>
+                <input class="sname" type="number" id="sname" name="sname">
+                <label for="fspeed">Коэффициент скорости игрока 1:</label>
+                </br>
+                <input class="fspeed" type="number" id="fspeed" name="fspeed">
+                <label for="sspeed">Коэффициент скорости игрока 2:</label>
+                </br>
+                <input class="sspeed" type="number" id="sspeed" name="sspeed">
+                <input type="submit" class="button" value="Начать игру">
+            </form>
+        </div>
+        <div class="hide playing-field">
+            <div class="player1"></div>
+            <div class="player2"></div>
+        </div>
+        <div class="info hide">
+        <div class="player-info">
+            <div class="player1-info">
+                <div class="player1-block"></div><span class="player1-span">первый игрок</span></div>
+            <div class="player2-info">
+                <div class="player2-block"></div><span class="player2-span">второй игрок</span>
+            </div>
+            <p class="game-rules"><strong>Правила:</strong> догони соперника за 60 секунд,<br> если ты больше него, или убегай 60 секунд, <br> если меньше :) p.s. осторожно, не столкнись <br> со стеной </p>
+            <div class="timer">60</div>
+        </div>
+        <script src="action_page.js"></script>
+    </div>
+</body>
+</html>

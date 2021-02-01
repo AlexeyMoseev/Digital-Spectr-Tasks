@@ -1,0 +1,27 @@
+.content {
+    &__line {
+        content: "";
+        height: 1px;
+        margin-bottom: 56px;
+        background: rgba(117, 117, 117, .2);
+    }
+    &__identation-snacks {
+        margin-bottom: 31px;
+    }
+    &__identation-margin-top_56px {
+        margin-top: 56px;
+    }
+    &__identation-margin-bottom_64px {
+        margin-bottom: 64px;
+    }
+    @include tablet {
+        &__identation-snacks {
+            margin-bottom: 48px;
+        }
+    }
+    @include phone {
+        &__identation-snacks {
+            margin-bottom: 42px;
+        }
+    }
+}

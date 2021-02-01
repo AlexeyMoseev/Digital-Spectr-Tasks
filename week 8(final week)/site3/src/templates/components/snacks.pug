@@ -1,0 +1,15 @@
+mixin snacks()
+    div.snacks 
+            .container 
+                .row
+                    h2.snacks__header.col-12 Закуски
+                    div.snacks__phantom-block.col-sm-5.col-5
+                    div.snacks__line.col-sm-2.col-2
+                    each val in [{name:"Сельдь на бородинском хлебе", image:"../images/сельдь.svg", price:"240 ₽"}, {name: "Соленья ассорти", image:"../images/соленья.svg", price:"320 ₽"}, {name:"Грибы маринованные", image:"../images/грибы.svg", price:"300 ₽"}, {name:"Сало домашнее с горчицей", image:"../images/сало.svg", price:"320 ₽"}, {name:"Малосольная семга", image:"../images/семга.svg", price:"390 ₽"}, {name:"Язык говяжий с хреном", image:"../images/язык.svg", price:"350 ₽"}]
+                        div.snacks__snack.js-snacks__snack.col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12
+                            .container 
+                                .row
+                                    div.snacks__snack-text.col-8
+                                        span.snacks__snack-name=val.name
+                                        span.snacks__snack-price=val.price 
+                                    img.snacks__snack-logo(src=val.image).col-4

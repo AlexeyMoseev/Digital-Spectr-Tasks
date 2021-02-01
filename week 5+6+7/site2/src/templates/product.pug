@@ -1,0 +1,110 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="../fonts/montserrat/montserrat.css")
+    title product
+    link(rel="stylesheet" href="../css/style.css")
+    script(async src="../js/bundle.js")
+  body
+    .content
+      .content__header-indentation
+        include include/header
+      main.main
+        div.product-header
+          div.container
+            div.row
+              div.product-header__images.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12
+                div.container
+                  div.row
+                    a(href="#")
+                      img.product-header__images-logo.col-12(src="../images/изображение 5.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.1.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.2.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.3.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.4.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.5.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.6.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.7.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.8.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 5.9.svg")
+                    img.product-header__images-image.col-2(src="../images/изображение 6.svg")
+              div.product-header__main-information.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12
+                div.container 
+                  div.row.justify-content-start
+                    h2.product-header__main-information-name.col-12 Personalized Dog Leash Hanger, Dog Leash Hook, Dog Gift Personalized with Name
+                    div.product-header__main-information-line.col-4
+                    div.col-8
+                    div.product-header__main-information-price.col-12
+                      span.product-header__main-information-price-dollar $23.99
+                      span.product-header__main-information-price-euro 18.34 €
+                    div.product-header__main-information-line.col-4 
+                    div.col-8
+                    div.product-header__main-information-inscription.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12
+                      span.product-header__main-information-inscription-header Apply the inscription on the product 
+                      input.product-header__main-information-inscription-input
+                      span.product-header__main-information-inscription-example Example: Enter the name you want on the necklace. Max 10 characters, no spaces, no special charachters. Thank you.
+                    div.product-header__main-information-quantity.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12
+                      span.product-header__main-information-quantity-header Quantity
+                      form.product-header__main-information-quantity-form
+                        input.product-header__main-information-quantity-input
+                        button.product-header__main-information-quantity-button 
+                          img.product-header__main-information-quantity-button-img(src="../images/Vector14.svg")
+                    button.product-header__main-information-buy.col-xl-5.col-lg-5.col-md-12.col-sm-12.col-12 Buy it now
+                    button.product-header__main-information-add.col-xl-5.col-lg-5.col-md-12.col-sm-12.col-12 Add to cart 
+                      img.product-header__main-information-add-img(src="../images/Vector 15.svg")  
+        div.main__product-line
+        div.product-description
+          div.container 
+            div.row  
+              div.product-description__content.col-xl-7.col-lg-7.col-md-12.col-sm-12.col-12 
+                h2.product-description__content-header.col-12 Product description
+                p.product-description__content-text.col-12 AN IDEAL GIFT FOR ANY OCCASION <br> Personalized cutting board is a perfect gift for any occasion: Birthday, Anniversary, Wedding, Bridal Shower, Mother's Day, Father’s Day, Christmas or Housewarming gift for family, couple etc. This cutting board is the ideal gift choice for your loved ones. It is guaranteed to be a talking point wherever it is presented! <br><br> All of our custom cutting boards are made of high-quality natural wood. Each and every board is examined carefully prior to beginning the engraving process. All boards are covered twice with hot mineral oil to last long, so the cutting board will be immediately available for use upon arrival. <br><br> HOW TO ORDER? <br> 1. Using a drop-down menu make your selection of wood type and size. You may also add display stand, gift wrap and note card to your order. <br> 2. Click “add to cart” button. <br> 3. Enter all information for personalization in the personalization box
+                div.product-description__content-button-wrapper
+                  button.product-description__content-button More about product
+                    img.product-description__content-button-img(src="../images/Vector 16.svg")
+              div.product-description__delivery-details.col-xl-5.col-lg-5.col-md-12.col-sm-12.col-12
+                h2.product-description__delivery-details-header Delivery details
+                div.product-description__delivery-details-text 
+                  h3.product-description__delivery-details-text-h3 Ready to ship in 2–4
+                  span.product-description__delivery-details-text-span in 2–4 business days From Ukraine <br> <br>
+                  h3.product-description__delivery-details-text-h3 Returns and exchanges accepted
+                  span.product-description__delivery-details-text-span Exceptions may apply. See return policy   
+        div.main__product-line
+        div.product-reviews 
+          div.container 
+            div.row 
+              a.product-reviews__header.col-12(href="#")
+                h2.product-reviews__header-h2 Reviews
+                div.product-reviews__header-stars
+                  img.product-reviews__header-stars-star(src="../images/star.svg")
+                  img.product-reviews__header-stars-star(src="../images/star.svg")
+                  img.product-reviews__header-stars-star(src="../images/star.svg")
+                  img.product-reviews__header-stars-star(src="../images/star.svg")
+                  img.product-reviews__header-stars-star(src="../images/empty-star.svg")
+                span.product-reviews__header-quantity (45)
+              div.product-reviews__line.col-8
+              div.product-reviews__reviewer.col-8 
+                include include/swiper-slide2-item/review1 
+              div.product-reviews__reviewer.col-8
+                include include/swiper-slide2-item/review2
+              div.product-reviews__reviewer.col-8
+                include include/swiper-slide2-item/review3  
+              div.product-reviews__button-wrapper.col-8
+                  button.product-reviews__button 23 more reviews
+                    img.product-reviews__button-img(src="../images/Vector 16.svg")    
+        div.main__product-line  
+        div.product-related 
+          div.container 
+            div.row
+              h2.product-related__header.col-12 Related to this item
+              div.product-related__buttons.col-12 
+                button.product-related__buttons-button wnicet
+                button.product-related__buttons-button wgood
+                button.product-related__buttons-button harder
+        .main__seller-online-indentation                        
+          include include/seller-online                  
+        include include/footer        
+
+                        

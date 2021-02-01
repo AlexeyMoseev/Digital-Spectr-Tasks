@@ -1,0 +1,41 @@
+.banner {
+  &__button {
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: $primary-color;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        opacity: $primary-opacity;
+    }
+  }
+  &__content {
+    position: relative;
+    background: $primary-color;
+  }
+  &__header {
+    margin-bottom: 45px;
+    font-family: $font-stack;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 63%;
+  }
+  &__wrapper-header-button {
+    padding: 31px 0px 40px 42.85px;
+  }
+}

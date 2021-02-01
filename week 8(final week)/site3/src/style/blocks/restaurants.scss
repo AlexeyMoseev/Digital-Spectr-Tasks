@@ -1,0 +1,43 @@
+.restaurants {
+  &__header {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1d1d1d;
+  }
+  &__restaurant {
+    padding-right: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    cursor: pointer;
+    &:hover {
+        opacity: $primary-opacity;
+    }
+  }
+  &__restaurant-logo {
+    width: 100%;
+    margin-right: 57px;
+    margin-bottom: 16px;
+  }
+  &__restaurant-name {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d1d1d;
+  }
+  &__restaurant-description {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+  }
+  &__restaurant-time {
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D;
+  }
+  @include phone {
+    padding-left: 15px;
+  }
+}

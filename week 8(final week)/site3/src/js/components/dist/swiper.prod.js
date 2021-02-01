@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){new Swiper(".swiper-container",{direction:"horizontal",loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})});

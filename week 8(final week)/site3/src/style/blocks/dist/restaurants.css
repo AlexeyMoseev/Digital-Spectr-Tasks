@@ -1,0 +1,41 @@
+.restaurants__header {
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+}
+
+.restaurants__restaurant {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+
+.restaurants__restaurant:hover {
+  background-color: #57AD56;
+}
+
+.restaurants__restaurant-logo {
+  margin-bottom: 16px;
+}
+
+.restaurants__restaurant-name {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+
+.restaurants__restaurant-description {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+
+.restaurants__restaurant-time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1D1D1D;
+}

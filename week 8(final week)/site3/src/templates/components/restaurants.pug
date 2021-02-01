@@ -1,0 +1,11 @@
+mixin restaurants()
+    div.restaurants 
+            .container 
+                .row
+                    h2.restaurants__header.col-12 Рестораны в Москве
+                    each val in [{image:"../images/Макдоналдс.svg", name:"Макдоналдс — Газетный", description:"₽₽ • Бургеры", time:"25 - 35 мин" }, {image:"../images/DimSum.svg", name:"DimSum & CO - ЦДМ", description:"₽ • Японская • Китайская • Азиатская", time:"40 - 50 мин" }, {image:"../images/ДвижОк.svg", name:"ДвижОК - Манежная", description:"₽ • американская • Европейская", time:"35 - 45 мин" }, {image:"../images/НЯ.svg", name:"НЯ - NHA", description:"₽₽ • Вьетнамская", time:"30 - 40 мин" }, {image:"../images/Точка Дзы.svg", name:"Точка Дзы - Цветной", description:"₽₽ • Вьетнамская", time:"40 - 50 мин" }, {image:"../images/Cinnabon.svg", name:"Cinnabon", description:"₽ • Выпечка • Десерты • Капкейки", time:"25 - 35 мин" }, {image:"../images/Pizzelove.svg", name:"PIZZELOVE", description:"₽₽ • Пицца", time:"15 - 25 мин" }, {image:"../images/Zю кафе.svg", name:"Zю кафе - Тверская", description:"₽₽ • Японская", time:"25 - 35 мин" }, {image:"../images/BQ.svg", name:"Bar BQ Cafe - Манежная", description:"₽₽₽ • Европейская", time:"30 - 40 мин" }]
+                        div.restaurants__restaurant.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+                            img.restaurants__restaurant-logo(src=val.image)
+                            span.restaurants__restaurant-name=val.name
+                            span.restaurants__restaurant-description=val.description
+                            span.restaurants__restaurant-time=val.time

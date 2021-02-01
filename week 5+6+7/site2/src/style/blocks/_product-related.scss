@@ -1,0 +1,28 @@
+.product-related {
+  &__header {
+    margin-bottom: 27px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e273a;
+  }
+  &__buttons {
+    &-button {
+      margin-bottom: 70px;
+      cursor: pointer;
+      margin-right: 20px;
+      width: 72px;
+      height: 24px;
+      background: #1e273a;
+      border-radius: 16px;
+      font-size: 12px;
+      line-height: 160%;
+      color: #ffffff;
+      &:hover {
+        opacity: $primary-opacity;
+      }
+    }
+  }
+}

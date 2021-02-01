@@ -1,0 +1,1 @@
+'use strict';!function(){var n=$('.js-nav__link');n.on('click',function(){n.removeClass('nav__link_active'),$(this).addClass('nav__link_active');});}();

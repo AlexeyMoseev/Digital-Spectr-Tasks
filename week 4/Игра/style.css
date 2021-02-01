@@ -1,0 +1,61 @@
+.body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.hide {
+  display: none;
+}
+.input-form {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form input {
+  display: block;
+  margin-bottom: 20px;
+}
+.playing-field {
+  float: left;
+  position: relative;
+  border: 1px solid;
+  width: 800px;
+  height: 600px;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+.player1 {
+  position: absolute;
+  background-color: red;
+}
+.player2 {
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.player1-info,
+.player2-info {
+  display: flex;
+}
+.player1-block,
+.player2-block {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+.player1-block {
+  margin-bottom: 10px;
+  background-color: red;
+}
+.player2-block {
+  background-color: blue;
+}
+.player1-span {
+  color: red;
+}
+.player2-span {
+  color: blue;
+}
+.timer {
+  display: inline-block;
+}

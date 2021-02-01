@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="../fonts/montserrat/montserrat.css")
+    title catalog
+    link(rel="stylesheet" href="../css/style.css")
+    script(async src="../js/bundle.js")
+  body
+    .content
+      .content__header-indentation.content__header-indentation_margin-bottom_0px
+        include include/header
+      main.main
+        div.product-class
+          div.container 
+            div.product-class__items.row
+              a.product-class__item(href="#") Свадьба
+              img.product-class__item(src="../images/стрелка2.svg")
+              a.product-class__item(href="#") Товары для вечеринки
+              img.product-class__item(src="../images/стрелка2.svg")
+              a.product-class__item(href="#") Декор для вечеринок
+                span.product-class__item-quantity (362 товар)
+        div.main__product-class-underline        
+        div.main__product-price-and-catalog-wrapper.container 
+          div.row
+            div.col-xl-2.col-lg-2.col-md-12.col-sm-12.col-12
+              form.product-price
+                h2.product-price__header Цена
+                div.product-price__items 
+                  div.product-price__item
+                    input.product-price__radio(name="price" type="radio" value="any price" id="product-price__radio1")
+                    label.product-price__label(for="product-price__radio1") Любая цена
+                  div.product-price__item
+                    input.product-price__radio(name="price" type="radio" value="cheaper 25$" id="product-price__radio2")
+                    label.product-price__label(for="product-price__radio2") Дешевле 25$
+                  div.product-price__item  
+                    input.product-price__radio(name="price" type="radio" value="from 25$ to 50$" id="product-price__radio3")
+                    label.product-price__label(for="product-price__radio3") От 25$ до 50$
+                  div.product-price__item
+                    input.product-price__radio(name="price" type="radio" value="from 50$ to 100$" id="product-price__radio4")
+                    label.product-price__label(for="product-price__radio4") От 50$ до 100$
+                  div.product-price__item  
+                    input.product-price__radio(name="price" type="radio" value="more than 100$" id="product-price__radio5")
+                    label.product-price__label(for="product-price__radio5") Дороже 100$
+                  div.product-price__line  
+                  div.product-price__item  
+                    input.product-price__radio(name="price" type="radio" value="sell-out" id="product-price__radio6")
+                    label.product-price__label.product-price__label(for="product-price__radio6") Распродажа
+            div.col-xl-1.col-lg-1.col-md-0.col-sm-0.col-0          
+            div.col-xl-9.col-lg-9.col-md-12.col-sm-12.col-12
+              div.product-catalog
+                div.container
+                  div.product-catalog__header
+                    a.product-catalog__header-item(href="#")
+                      span.product-catalog__header-item-text Сначала самые дорогие
+                      img(src="../images/Vector13.svg")
+                    a.product-catalog__header-item(href="#")
+                      span.product-catalog__header-item-text Самые новые
+                      img(src="../images/Vector13.svg")
+                  div.product-catalog__items    
+                    div.product-catalog__row-items.row
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item2
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item3 
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item4
+                    div.product-catalog__row-items.row    
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item1
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item5 
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item6
+                    div.product-catalog__row-items.row 
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12 
+                        include include/product-card/item7
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12 
+                        include include/product-card/item8
+                      div.col-xl-4.col-lg-6.col-md-12.col-sm-12.col-12
+                        include include/product-card/item9 
+                  div.product-catalog__line      
+                  div.product-catalog__navigation
+                    button.product-catalog__button-left  
+                      img.product-catalog__button-left-arrow(src="../images/стрелка4.svg")
+                      div.product-catalog__button-left-text Previous
+                    div.product-catalog__pages
+                      a.product-catalog__page(href="#") 1
+                      a.product-catalog__page(href="#") ...
+                      a.product-catalog__page(href="#") 7
+                      a.product-catalog__page(href="#") 8
+                      a.product-catalog__page(href="#") 9
+                      a.product-catalog__page(href="#") 10
+                      a.product-catalog__page.product-catalog__page_active(href="#") 11
+                      a.product-catalog__page(href="#") 12
+                      a.product-catalog__page(href="#") 13
+                      a.product-catalog__page(href="#") 14
+                      a.product-catalog__page(href="#") 15
+                      a.product-catalog__page(href="#") 16
+                      a.product-catalog__page(href="#") ...
+                      a.product-catalog__page(href="#") 345
+                    button.product-catalog__button-right  
+                      div.product-catalog__button-right-text Next
+                      img.product-catalog__button-right-arrow(src="../images/стрелка3.svg")    
+        .main__seller-online-indentation                        
+          include include/seller-online                  
+      include include/footer                             

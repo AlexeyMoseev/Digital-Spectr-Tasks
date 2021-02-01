@@ -1,0 +1,110 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="../fonts/montserrat/montserrat.css")
+    title home page
+    link(rel="stylesheet" href="../css/style.css")
+    script(async src="../js/bundle.js")
+  body
+    .content
+      .content__header-indentation
+        include include/header
+      main.main
+        .main__sim-slider-and-banner-indentation
+          .sim-slider-and-banner
+            .container
+              .row
+                div.col-12.col-sm-12.col-md-12.col-lg-8.col-xl-8
+                  .sim-slider
+                    ul.sim-slider__list
+                      li
+                        img(src="../images/Экран.jpg" alt="screen")
+                      // это экран
+                      li.sim-slider__element_change-background-1.sim-slider__element
+                        h2.sim-slider__element-header Handmade sweets
+                        button.sim-slider__element-button View 456 products
+                      li.sim-slider__element_change-background-2.sim-slider__element
+                        h2.sim-slider__element-header Handmade sweets
+                        button.sim-slider__element-button View 456 products
+                      li.sim-slider__element_change-background-3.sim-slider__element
+                        h2.sim-slider__element-header Handmade sweets
+                        button.sim-slider__element-button View 456 products
+                      li.sim-slider__element_change-background-4.sim-slider__element
+                        h2.sim-slider__element-header Handmade sweets
+                        button.sim-slider__element-button View 456 products
+                    .sim-slider__arrow-left
+                    .sim-slider__arrow-right
+                    .sim-slider__dots
+                div.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                  .banner
+                    .banner__content
+                      .banner__wrapper-header-button
+                        h2.banner__header
+                          | Want
+                          br
+                          |  to sell
+                          br
+                          |  on SOM?
+                        button.banner__button Сreate a store
+                      img.banner__image(src="../images/Vector7.svg")
+        .main__slider-underline-indentation
+          .slider-underline
+            .container
+              .row
+                .slider-underline__element.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                  img.slider-underline__element-logo(src="../images/Vector8.svg")
+                  h2.slider-underline__element-header Unique everything
+                  p.slider-underline__element-description
+                    | We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).
+                .slider-underline__element.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                  img.slider-underline__element-logo(src="../images/Vector9.svg")
+                  h2.slider-underline__element-header Independent sellers
+                  p.slider-underline__element-description
+                    | Buy directly from someone who put their heart and soul into making something special.
+                .slider-underline__element.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                  img.slider-underline__element-logo(src="../images/Vector10.svg")
+                  h2.slider-underline__element-header Secure shopping
+                  p.slider-underline__element-description We use best-in-class technology to protect your transactions.
+        .main__swiper-indentation
+          .swiper
+            .swiper-container
+              // Additional required wrapper
+              .swiper-wrapper
+                // Slides
+                .swiper-slide
+                  .container
+                    h2.swiper__header
+                      | Recently viewed
+                      h2
+                        .row
+                          div.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-3
+                            include include/product-card/item1
+                          div.col-sm-12.col-md-12.col-lg-4.col-xl-3 
+                            include include/product-card/item2
+                          div.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-3
+                            include include/product-card/item3
+                          div.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-3
+                            include include/product-card/item4
+              img.swiper-button-next.swiper__arrow(src="../images/стрелка.svg")
+        .main__swiper-indentation2
+          .swiper
+            .swiper-container
+              // Additional required wrapper
+              .swiper-wrapper
+                // Slides
+                .swiper-slide
+                  .container
+                    h2.swiper__header New customer reviews
+                    .row
+                      div.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-4
+                        include include/swiper-slide2-item/review1
+                      div.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-4
+                        include include/swiper-slide2-item/review2
+                      div.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-4
+                        include include/swiper-slide2-item/review3
+              img.swiper-button-next.swiper__arrow(src="../images/стрелка.svg")
+        .main__seller-online-indentation
+          include include/seller-online    
+      include include/footer

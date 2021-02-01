@@ -1,0 +1,84 @@
+.seller-online {
+  &__button {
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: $primary-color;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      opacity: $primary-opacity;
+    }
+  }
+  &__content-text {
+    margin-left: 58.71px;
+    margin-right: 110px;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 135px;
+    background: $primary-color;
+  }
+  &__image {
+    margin-right: 206.02px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .seller-online {
+    &__button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    &__content-text {
+      position: relative;
+      z-index: 1;
+    }
+    &__image {
+      position: absolute;
+      left: 70px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .seller-online {
+    &__image {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .seller-online {
+    &__content-text {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 130%;
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .seller-online {
+    &__image {
+      margin-right: 100px;
+    }
+  }
+}

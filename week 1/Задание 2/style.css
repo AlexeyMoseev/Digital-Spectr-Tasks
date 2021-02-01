@@ -1,0 +1,64 @@
+body {
+  width: 1024px;
+  height: 768px;
+}
+.wrapper {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.block1 {
+  width: 200px;
+  height: 150px;
+  background-color: green;
+}
+.block2 {
+  background-color: blue;
+}
+.wrapper_type1 .block1 {
+  float: left;
+}
+.wrapper_type2 .block1 {
+  float: left;
+}
+.wrapper_type2 .block2 {
+  margin-left: 200px;
+}
+.wrapper_type3 .block1 {
+  float: right;
+}
+.wrapper_type3 .block2 {
+  margin-right: 230px;
+}
+.wrapper_type4 .block1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -75px;
+  margin-left: -100px;
+}
+.wrapper_type4 .block2 {
+  position: relative;
+}
+.wrapper_type5 .block1 {
+  clear: both;
+  float: right;
+  width: 200px;
+  height: 300px;
+}
+.wrapper_type5 .block2 {
+  margin-right: 230px;
+}
+.wrapper_type6 .block1 {
+  float: left;
+  position: relative;
+  left: 250px;
+  top: 150px;
+}

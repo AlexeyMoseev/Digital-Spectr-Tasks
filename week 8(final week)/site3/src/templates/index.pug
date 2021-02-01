@@ -1,0 +1,16 @@
+extends ./layout/layout
+include components/photo
+include components/nav
+include components/snacks
+
+block variables
+    - var page_title = 'Главная';
+
+block content
+    +photo()
+    .container
+        .row        
+            +nav()
+    div.content__line
+    div.content__identation-snacks
+        +snacks()           

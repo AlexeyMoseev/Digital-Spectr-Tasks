@@ -1,0 +1,38 @@
+.main {
+  position: relative;
+  z-index: 0;
+}
+
+.main__seller-online-indentation {
+  margin-bottom: 59.43px;
+}
+
+.main__sim-slider-and-banner-indentation {
+  margin-bottom: 51px;
+}
+
+.main__slider-underline-indentation {
+  margin-bottom: 75.87px;
+}
+
+.main__swiper-indentation {
+  margin-bottom: 76.87px;
+}
+
+.main__swiper-indentation2 {
+  margin-bottom: 60.76px;
+}
+
+.main__product-class-underline {
+  margin-bottom: 26px;
+  content: "";
+  height: 1px;
+  background: #ebebeb;
+}
+
+.main__product-line {
+  content: "";
+  height: 1px;
+  border: 1px dashed #D9D8D8;
+  margin-bottom: 37.51px;
+}

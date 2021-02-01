@@ -1,0 +1,43 @@
+.product-description__content {
+  padding-right: 67px;
+}
+
+.product-description__content-header {
+  margin-bottom: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e273a;
+}
+
+.product-description__content-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #3f3f3f;
+}
+
+.product-description__delivery-details-header {
+  margin-bottom: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e273a;
+}
+
+.product-description__delivery-details-text-h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f3f3f;
+}
+
+.product-description__delivery-details-text-span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f3f3f;
+}

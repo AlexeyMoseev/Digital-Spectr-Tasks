@@ -1,0 +1,1 @@
+'use strict';!function(){var s=$('.js-snacks__snack');s.first().addClass('snacks__snack_active'),s.on('click',function(){s.removeClass('snacks__snack_active'),$(this).addClass('snacks__snack_active');});}();
